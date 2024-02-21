@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Portfolio{% endblock title %}
+{% block body %}
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-text">
+        <span>What Technologies Use in Projects</span>
+        <h2>Latest Project</h2>
+    </div>
+    <div class="container">
+        <div class="filter-buttons">
+            <button class="bt" data-filter="all">All</button>
+            <button id="django" class="bt" data-filter=".django">Django</button>
+            <button id="java" class="bt" data-filter=".java">Java</button>
+            <button id="reacts" class="bt" data-filter=".react">Reacts</button>
+            <button id="web" class="bt" data-filter=".web">Web Application</button>
+        </div>
+
+        <div class="port-gallery">
+            <div class="port-box mix django">
+                <div class="port-img">
+                    <img src="{% static 'media/pyt.png' %}" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Django Project</h3>
+                    <p>
+                        Developed the Library Automation System web application using technology for frontend
+                        is HTML, CSS and backend JavaScript with MySQL database Developed Ecommerce Application using technology Frontend HTML, CSS and
+                        Backend JavaScript, Python with Django framework
+                    </p>
+                    <!-- <a href="#" class="btn">GITHUB LINK</a> -->
+                </div>
+            </div>
+
+            <div class="port-box mix java">
+                <div class="port-img">
+                    <img src="{% static 'media/java.png' %}" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Java Project</h3>
+                    <p>
+                        The WebCustomer Tracker. Alldetails of customer storedin database for use in future.
+                        Technologies Used: - Core java, Hibernate, Spring MVC, XML and JSP.
+                    </p>
+                    <!-- <a href="#" class="btn">GITHUB LINK</a> -->
+                </div>
+            </div>
+
+            <div class="port-box mix react">
+                <div class="port-img">
+                    <img src="{% static 'media/react.png' %}" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>Reacts Project</h3>
+                    <p>
+                        Working on this Technology is Very Soon.
+                    </p>
+                    <!-- <a href="#" class="btn">GITHUB LINK</a> -->
+                </div>
+            </div>
+
+            <div class="port-box mix web">
+                <div class="port-img">
+                    <img src="{% static 'media/www.png' %}" alt="">
+                </div>
+                <div class="port-content">
+                    <h3>WebApp Project</h3>
+                    <p>
+                        Developed the Library Automation System web application using technology for frontend
+                        is HTML, CSS and backend JavaScript with MySQL database Developed Ecommerce Application using technology Frontend HTML, CSS and
+                        Backend JavaScript, Python with Django framework
+                    </p>
+                    <!-- <a href="#" class="btn">GITHUB LINK</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock body %}

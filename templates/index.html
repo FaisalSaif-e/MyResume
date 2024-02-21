@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<section class="home" id="home">
+    <div class="home-content">
+        <h1>Hi! I'm Faisal Saif And I'm</h1>
+        <h3><span class="multi-type"></span></h3>
+        <p>A Software Developer with 4.5 Years of experience, specializing in Front-end, back-end
+            development, Python, Java and web development. A strong history of developing
+            innovative application features and software solutions to enhance the user experience.</p><br>
+        <div class="info-box">
+            <div class="email-info">
+                <h2>Email:</h2>
+                <span>thefaisalsaif@gmail.com</span>
+            </div>
+            <div class="github-info">
+                <h2>Github:</h2>
+                <span>https://github.com/FaisalSaif-e</span>
+            </div>
+        </div>
+        <div>
+            <a href="{% static 'media/Faisal Software_Developer Resume.pdf' %}" class="btn" download>Download CV</a>
+            <a href="contact" class="btn1">Hire Me Now!</a>
+        </div>
+        <div class="social-icon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </div>
+</section>
+
+<script>
+    const typed = new Typed('.multi-type',{
+        strings: ['WebApp Developer', 'Backend Developer', 'Frontend Developer'],
+        typeSpeed:100, 
+        backSpeed:100,
+        BackDelay:1000,
+        loop:true
+    });
+</script>
+{% endblock body %}

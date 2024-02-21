@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+{% block body %}
+<section id="contact" class="contact">
+    <div class="contact-text">
+        <span>Hired or Ask Me Questions</span>
+        <h2>Contact Me</h2>
+    </div>
+    <form class="form" action="https://formspree.io/f/mleqjywo" method="POST">
+        {% csrf_token %}
+        <input type="text" name="name" placeholder="Your Name" minlength="5" maxlength="20" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Your Contact Number" maxlength="10" required>
+        <input type="c-name" name="Company-Name" placeholder="Company Name">
+        <input type="address" name="Address" placeholder="Your Address" required>
+        <textarea name="YourMessage" id="" cols="30" rows="10" minlength="20" maxlength="100" placeholder="Your Message" required></textarea>
+        <br><br>
+        <div class="btn-button formBtn">
+            <button type="submit" class="btn">Send Message</button>
+        </div> 
+    </form>
+</section>
+{% endblock body %}

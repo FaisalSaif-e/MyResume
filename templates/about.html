@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+{% block body %}
+<section id="about" class="about">
+    <div class="about-img">
+        <img src="{% static 'media/cd.png' %}">
+        <div class="about-info1">
+            <span>4+</span>
+            <p>Years of Experience</p>
+        </div>
+        <div class="about-info2">
+            <span>5+</span>
+            <p>Complete Project</p>
+        </div>
+        <div class="about-info3">
+            <span>12+</span>
+            <p>Happy Clients</p>
+        </div>
+    </div>
+    <div class="about-content">
+        <span>LET ME INTRODUCE MYSELF</span>
+        <h1>About Me</h1>
+        <h2>A story of good</h2><br>
+        <p>I am a skilled full-stack developer with experience in front-end and back-end technologies. 
+            I specialize in developing end-to-end applications that provide an optimal user experience</p><br>
+        <p>Highly analytical full-stack developer committed to delivering robust and reliable applications across various industries. With expertise in Java and Python, 
+            I develop efficient and secure systems that provide an optimal user experience.</p><br>
+        <p>I am a collaborative and creative full-stack developer, experienced in Django and Spring MVC with mySQL, PostgreSQL. 
+            I develop scalable and efficient applications that meet or exceed client expectations.</p>
+        <br>
+        <!-- <div class="about-btn">
+            <a href="#" class="btn">Read More!</a>
+        </div> -->
+    </div>
+</section>
+{% endblock body %}
